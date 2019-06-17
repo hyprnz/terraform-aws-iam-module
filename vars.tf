@@ -17,6 +17,12 @@ variable "name" {
   description = "Desired name for the IAM user"
 }
 
+variable "user_groups" {
+  description = "List of associated groups for membership"
+  type        = "list"
+
+}
+
 variable "path" {
   description = "Desired path for the IAM user"
   default     = "/"
