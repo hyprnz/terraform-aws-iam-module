@@ -18,7 +18,7 @@ variable "name" {
 }
 
 variable "user_groups" {
-  description = "List of associated groups for membership"
+  description = "List of associated groups for the user is a member of"
   type        = "list"
 
 }
@@ -67,18 +67,3 @@ variable "permissions_boundary" {
   description = "The ARN of the policy that is used to set the permissions boundary for the user."
   default     = ""
 }
-
-variable "aws_region" {
-  description = "The AWS region for the resource used in the provider section"
-}
-
-variable "aws_profile" {
-  description = "defines profile for AWS credentials"
-}
-
-variable "terraform_state_bucket" {
-}
-
-variable "terraform_state_bucket_region" {
-}
-
