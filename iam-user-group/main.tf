@@ -1,15 +1,3 @@
-terraform {
-  backend "s3" {}
-
-  # Restrict the version of Terraform able to run this module
-  required_version = "~> 0.11"
-
-  # Re-usable modules should constrain only the minimum allowed version
-  # such as >= 1.0.0
-  required_providers = {
-    aws  = ">= 2.6.0"
-  }
-}
 
 resource "aws_iam_user" "this" {
   count = "${var.create_user ? 1 : 0}"
