@@ -1,6 +1,6 @@
-# Terraform IAM Module
+# Terraform User to Group Module
 
-A module to create a user and set associated properties.
+A module to create a user and set associated properties. Also adds users to groups.
 
 ## Inputs
 
