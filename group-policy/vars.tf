@@ -3,7 +3,7 @@ variable "policy_name" {
 }
 
 variable "policy_sid" {
-  description = "The sid of the policy"
+  description = "The sid of the policy - must be alphanumeric characters only"
 }
 
 variable "policy_actions" {
