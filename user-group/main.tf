@@ -1,4 +1,3 @@
-
 resource "aws_iam_user" "this" {
   count = "${var.create_user ? 1 : 0}"
 
@@ -12,6 +11,7 @@ resource "aws_iam_user_group_membership" "this" {
   user   = "${aws_iam_user.this.name}"
   groups = ["${var.user_groups}"]
 }
+
 resource "aws_iam_user_login_profile" "this" {
   count = "${var.create_user && var.create_iam_user_login_profile ? 1 : 0}"
 

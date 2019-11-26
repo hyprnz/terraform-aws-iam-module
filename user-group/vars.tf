@@ -20,7 +20,6 @@ variable "name" {
 variable "user_groups" {
   description = "List of associated groups for the user is a member of"
   type        = "list"
-
 }
 
 variable "path" {
