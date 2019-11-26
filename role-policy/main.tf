@@ -9,9 +9,10 @@ data "aws_iam_policy_document" "this" {
 }
 
 resource "aws_iam_policy" "this" {
-  name   = "${var.policy_name}"
-  path   = "/"
-  policy = "${data.aws_iam_policy_document.this.json}"
+  name        = "${var.policy_name}"
+  description = "${var.description}"
+  path        = "/"
+  policy      = "${data.aws_iam_policy_document.this.json}"
 }
 
 resource "aws_iam_role_policy_attachment" "this" {

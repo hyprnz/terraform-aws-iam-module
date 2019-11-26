@@ -1,8 +1,9 @@
 module "example" {
   source = "../../role-policy"
 
-  policy_name = "K8sS3DatastoreModule"
-  policy_sid  = "K8S3Datastore"
+  policy_name = "ExamplePolicy"
+  policy_sid  = "ExamplePolicyActions"
+  description = "Example policy for testing"
 
   policy_actions = [
     "iam:CreatePolicy",
