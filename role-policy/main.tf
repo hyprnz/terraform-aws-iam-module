@@ -10,7 +10,7 @@ data "aws_iam_policy_document" "this" {
 
 resource "aws_iam_policy" "this" {
   name        = var.policy_name
-  description = var.description
+  description = var.policy_description
   path        = "/"
   policy      = data.aws_iam_policy_document.this.json
 }

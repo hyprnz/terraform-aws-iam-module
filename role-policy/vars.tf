@@ -2,7 +2,7 @@ variable "policy_name" {
   description = "The name of the policy to create"
 }
 
-variable "description" {
+variable "policy_description" {
   description = "A description of the policy"
   default     = ""
 }
