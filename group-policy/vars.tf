@@ -8,15 +8,16 @@ variable "policy_sid" {
 
 variable "policy_actions" {
   description = "A List of policy actions"
-  type        = "list"
+  type        = list(string)
 }
 
 variable "policy_resources" {
   description = "The resources defined in the policy"
-  type        = "list"
+  type        = list(string)
   default     = ["*"]
 }
 
 variable "group_name" {
   description = "The name of the group to bind the policy to"
 }
+
