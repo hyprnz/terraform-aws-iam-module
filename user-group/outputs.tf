@@ -1,6 +1,6 @@
 output "this_iam_user_name" {
   description = "The user's name"
-  value       = element(concat(aws_iam_user.this.*.name, [""]), 0)
+  value       = concat(aws_iam_user.this.*.name, [""])[0]
 }
 
 output "this_iam_user_arn" {
@@ -123,7 +123,7 @@ output "keybase_secret_key_pgp_message" {
 Version: Keybase OpenPGP v2.0.76
 Comment: https://keybase.io/crypto
 
-${element(concat(aws_iam_access_key.this.*.encrypted_secret, [""]), 0)}
+${concat(aws_iam_access_key.this.*.encrypted_secret, [""])[0]}
 -----END PGP MESSAGE-----
 EOF
 
