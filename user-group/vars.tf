@@ -19,7 +19,7 @@ variable "name" {
 
 variable "user_groups" {
   description = "List of associated groups for the user is a member of"
-  type        = "list"
+  type        = list(string)
 }
 
 variable "path" {
@@ -66,3 +66,4 @@ variable "permissions_boundary" {
   description = "The ARN of the policy that is used to set the permissions boundary for the user."
   default     = ""
 }
+
