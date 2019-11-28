@@ -1,3 +1,9 @@
+terraform {
+  required_providers {
+    aws = "~> 2.19"
+  }
+}
+
 data "aws_iam_policy_document" "this" {
   statement {
     sid = var.policy_sid

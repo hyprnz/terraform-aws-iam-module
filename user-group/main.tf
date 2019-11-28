@@ -1,3 +1,10 @@
+terraform {
+  required_providers {
+    aws = "~> 2.19"
+  }
+}
+
+
 resource "aws_iam_user" "this" {
   count = var.create_user ? 1 : 0
 
