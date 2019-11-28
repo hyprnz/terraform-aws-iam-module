@@ -1,8 +1,8 @@
 module "example" {
   source = "../../role-policy"
 
-  policy_name = "ExamplePolicy"
-  policy_sid  = "ExamplePolicyActions"
+  policy_name        = "ExamplePolicy"
+  policy_sid         = "ExamplePolicyActions"
   policy_description = "Example policy for testing"
 
   policy_actions = [
