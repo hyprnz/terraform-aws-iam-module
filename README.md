@@ -1,4 +1,4 @@
-# Terraform IAM Module
+# Terraform AWS IAM Module
 
 This module contains a collection of modules for creating IAM resources.
 
