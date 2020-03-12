@@ -1,5 +1,8 @@
 module "example" {
-  source = "../../group-policy"
+  source = "../../policy-to-group"
+  providers = {
+    aws = aws
+  }
 
   policy_name = "ExampleECRAccess"
   policy_sid  = "ExampleAccesstoECR"
@@ -33,4 +36,12 @@ module "example" {
   ]
 
   group_name = "PushToECR"
+}
+
+provider "aws" {
+  region = var.region
+}
+
+variable "region" {
+  default = "ap-southeast-2"
 }

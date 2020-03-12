@@ -71,7 +71,3 @@ variable "aws_region" {
   description = "The region where the resources should be created in"
   default = "ap-southeast-2"
 }
-
-variable "aws_account_number" {
-  description = "The accountnumber that creaes the user"
-}

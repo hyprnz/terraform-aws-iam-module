@@ -1,5 +1,8 @@
 module "example" {
-  source = "../../role-policy"
+  source = "../../policy-to-role"
+  providers = {
+    aws = aws
+  }
 
   policy_name        = "ExamplePolicy"
   policy_sid         = "ExamplePolicyActions"
@@ -17,4 +20,12 @@ module "example" {
   ]
 
   role_name = "IndividualContributor"
+}
+
+provider "aws" {
+  region = var.region
+}
+
+variable "region" {
+  default = "ap-southeast-2"
 }
