@@ -1,4 +1,4 @@
-## Terraform Group To Policy Module
+## Terraform Policy to Group Module
 
 This module ill create a IAM policy and group and bind the policy to the group.
 

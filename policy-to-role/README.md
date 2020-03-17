@@ -1,4 +1,4 @@
-## Terraform Group To Policy Module
+## Terraform Policy to Role Module
 
 This module creates a IAM policy and  attaches the policy to an existing Role.
 
