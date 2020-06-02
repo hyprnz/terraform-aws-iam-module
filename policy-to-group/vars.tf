@@ -17,6 +17,12 @@ variable "policy_resources" {
   default     = ["*"]
 }
 
+variable "create_group" {
+  description = "Whether to create the IAM group or not"
+  type        = bool
+  default     = true
+}
+
 variable "group_name" {
   description = "The name of the group to bind the policy to"
 }

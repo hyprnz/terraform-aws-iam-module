@@ -16,11 +16,13 @@ resource "aws_iam_policy" "this" {
 }
 
 resource "aws_iam_group" "this" {
-  name = var.group_name
+  count = var.create_group ? 1 : 0
+  name  = var.group_name
 }
 
 resource "aws_iam_group_policy_attachment" "this" {
-  group      = aws_iam_group.this.name
+  # group      = aws_iam_group.this.name
+  group      = var.group_name
   policy_arn = aws_iam_policy.this.arn
 }
 
