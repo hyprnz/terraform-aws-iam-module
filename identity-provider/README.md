@@ -1,6 +1,12 @@
+# Terraform Identity Provider modules
+
+A module to create an identity Provider IAM resource for open id connect provider.
+
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12.26 |
 
 ## Providers
 
