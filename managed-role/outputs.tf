@@ -12,7 +12,7 @@ output "policy_arn" {
 
 output "role_arn" {
   description = "The arn of the role created"
-  value       =  module.role.role_arn
+  value       = module.role.role_arn
 }
 
 
