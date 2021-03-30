@@ -2,6 +2,7 @@ module "role" {
   source                      = "../resources/role"
   role_name                   = var.role_name
   assume_role_policy_document = var.assume_role_policy_document
+  tags                        = var.tags
 }
 
 
