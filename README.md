@@ -8,6 +8,7 @@ These include
 * [Policy to Group](./policy-to-group/README.md) - Creates an IAM policy and group and created the attachment between them.
 * [Policy to Role](./policy-to-role/README.md) - Creates an IAM policy and attaches it with an existing Role.
 * [User to Group](./user-to-group/README.md) - Creates an IAM user and adds user to a list of groups.
+* [Managed Role](./managed-role/README.md) - Creates an IAM role and attaches the policy to it.
 
 ## ADR's
 
