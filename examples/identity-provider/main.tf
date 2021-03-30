@@ -8,6 +8,7 @@ module "example" {
   identity_provider_url  = "https://accounts.google.com"
   client_id_list         = ["ExampleClientID"]
   thumbprint_list        = []
+  tags                   = {"Env": "test"}
 }
 
 provider "aws" {
