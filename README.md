@@ -9,6 +9,7 @@ These include
 * [Policy to Role](./policy-to-role/README.md) - Creates an IAM policy and attaches it with an existing Role.
 * [User to Group](./user-to-group/README.md) - Creates an IAM user and adds user to a list of groups.
 * [Managed Role](./managed-role/README.md) - Creates an IAM role and attaches the policy to it.
+* [Identity-Provider](./identity-provider/README.md) - Creates an IAM identidy provider for open id connect provider.
 
 ## ADR's
 
