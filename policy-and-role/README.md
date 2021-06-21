@@ -1,4 +1,6 @@
-## Terraform Policy and Role Module
+# Terraform Policy and Role Module
+
+__This module is now deprectaed and will be removed in future  versions of the module. Please use the [managed policy module](../managed-policy/README.md)__
 
 This module creates a IAM policy and IAM Role and attaches the policy to the role.
 
