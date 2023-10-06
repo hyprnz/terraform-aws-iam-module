@@ -1,5 +1,5 @@
 # Terraform AWS IAM Module
-
+**This module has been archived and is no longer actively maintained**
 This module contains a collection of modules for creating IAM resources.
 
 These include
